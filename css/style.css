@@ -3,6 +3,39 @@ p{
  font-family: 'Inconsolata', monospace;
 }
 
+.social a{
+    font-size:4.5em;
+    padding:3rem;
+}
+
+.fa-facebook{
+    color:#4869ae;
+}
+
+.fa-google-plus-g{
+    color:#c03317;
+}
+
+.fa-youtube{
+    color:#ff0000;
+}
+
+.fa-twitter{
+    color:#1da1f2;
+}
+
+.fa-instagram{
+    color:#cd3aa0;
+}
+
+.fa-facebook:hover,
+.fa-google-plus-g:hover,
+.fa-youtube:hover,
+.fa-twitter:hover,
+.fa-instagram:hover{
+    color:#d5d5d5;
+}
+
 .parallax1{
   background: url(../images/poker_bg1_1980x1080.jpg) no-repeat center;
   background-size: cover;
