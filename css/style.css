@@ -1,3 +1,7 @@
+p{
+ font-family: 'Inconsolata', monospace;
+}
+
 .parallax1{
   background: url(../images/poker_bg1_1980x1080.jpg) no-repeat center;
   background-size: cover;
