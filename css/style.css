@@ -1,5 +1,5 @@
 .parallax1{
-  background: url('./images/poker_bg1_1980x1080.jpg') no-repeat center;
+  background: url(../images/poker_bg1_1980x1080.jpg) no-repeat center;
   background-size:cover;
   background-attachment:fixed;
   height:300px;
