@@ -3,6 +3,11 @@ p{
  font-family: 'Inconsolata', monospace;
 }
 
+h1,h2,h3,h4,h5,h6{
+ font-family: 'Inconsolata', monospace;
+ weight:800;
+}
+
 .social a{
     font-size:4.5em;
     padding:3rem;
