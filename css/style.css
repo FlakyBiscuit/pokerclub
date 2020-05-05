@@ -10,7 +10,7 @@ h1{
 }
 
 .jumbotron{
-  background: url(../images/green_felt_1980x1020.jpg) no-repeat center;
+  background: url(../images/green_felt_1980x1020.jpg) repeat;
   color:#fff;
 }
 
