@@ -9,6 +9,10 @@ h1{
  weight:800;
 }
 
+.jumbotron{
+  background: url(https://i.imgur.com/DrMsOW2.png) no-repeat center;
+}
+
 .social a{
     font-size:4.5em;
     padding:3rem;
