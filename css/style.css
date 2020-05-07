@@ -58,7 +58,7 @@ h1{
 
 .falling_items_bg{
   background: #fff;
-  background-image: url(../images/spining_chip.gif);
+  background-image: url(../images/spining_chip.gif), url(../images/spining_chip.gif), url(../images/spining_chip.gif);
   height: 100%;
   left: 0;
   position: absolute;
