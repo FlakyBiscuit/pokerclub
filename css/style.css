@@ -56,7 +56,7 @@ h1{
   height: 300px;
 }
 
-#falling_items_bg{
+.falling_items_bg{
   background: none;
   background-image: url(../images/spinning_chip.gif));
   height: 100%;
