@@ -58,7 +58,7 @@ h1{
 
 .falling_items_bg{
   background: none;
-  background-image: url('../images/corndog-tile-1.png'), /*url('../images/corndog-tile.png'),*/ url('../images/corndog-tile-2.png');
+  background-image: url('../images/corndog-tile-1.png'), url('../images/corndog-tile-2.png'), url('../images/corndog-tile.png');
   /* background-image: url(../images/spining_chip.gif), url(../images/spining_chip.gif), url(../images/spining_chip.gif);*/
   height: 100%;
   left: 0;
