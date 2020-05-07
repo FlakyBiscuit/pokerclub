@@ -57,14 +57,14 @@ h1{
 }
 
 .falling_items_bg{
-  background: none;
+  background: #fff;
   background-image: url(../images/spining_chip.gif);
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
-  z-index:1;
+  z-index:-1;
  -webkit-animation: falling_items_bg 1000s linear infinite;
  -moz-animation: falling_items_bg 1000s linear infinite;
  -ms-animation: falling_items_bg 1000s linear infinite;
