@@ -66,7 +66,7 @@ h1{
   top: 0;
   width: 100%;
   z-index:1;
-  animation: falling_items_bg 1000s linear infinite;
+  animation: falling_items_bg 10s linear infinite;
   transform: translate3d(0,0,0);
   /* chromium css-hack */
  -webkit-animation: falling_items_bg 1000s linear infinite;
@@ -83,8 +83,8 @@ h1{
 
 }
         @keyframes falling_items_bg {
-          0% {/*background-position: 0px 0px, 0px 0px, 0px 0px;*/ transform: rotate(0deg)/*,rotate(0),rotate(0)*/;}
-          100% {/*background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;*/ transform: rotate(90deg)/*,rotate(360),rotate(275);*/}
+          0% {background-position: 0px 0px/*, 0px 0px, 0px 0px*/; transform: rotate(0deg)/*,rotate(0),rotate(0)*/;}
+          100% {background-position: 50000px 50000px/*, -10000px 20000px, 10000px 20000px*/; transform: rotate(90deg)/*,rotate(360),rotate(275);*/}
 	  /* from {transform: rotate(0deg), rotate(0deg), rotate(0deg);} */
 	  /* to {transform: rotate(0deg), rotate(360deg), rotate(0deg);} */
 	  /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
