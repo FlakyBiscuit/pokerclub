@@ -67,7 +67,7 @@ h1{
   width: 100%;
   z-index:1;
   animation: falling_items_bg 10s linear infinite;
-  transform: translate3d(0,0,0);
+  /*transform: translate3d(0,0,0);*/
   /* chromium css-hack */
  -webkit-animation: falling_items_bg 1000s linear infinite;
  -webkit-transform: translate3d(0,0,0);
