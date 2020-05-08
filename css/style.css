@@ -100,31 +100,45 @@ h1{
 
 .falling_spinning_item1 {
     background-image: url('../images/corndog-tile-2.png');
-		  animation-name: spin;
+		  animation-name: falling_spinning_item1;
 		  animation-iteration-count: infinite;
 		  animation-timing-function: linear;
 		  animation-duration: 26s;
-		  animation-play-state: running;
+		  /* animation-play-state: running; */
 		  
-		  -webkit-animation-name: spin;
+		  -webkit-animation-name: falling_spinning_item1;
 		  -webkit-animation-iteration-count: infinite;
 		  -webkit-animation-timing-function: linear;
 		  -webkit-animation-duration: 26s;
-		  -webkit-animation-play-state: running;
+		  /* -webkit-animation-play-state: running; */
 		  
-		  -moz-animation-name: spin;
+		  -moz-animation-name: falling_spinning_item1;
 		  -moz-animation-iteration-count: infinite;
 		  -moz-animation-timing-function: linear;
 		  -moz-animation-duration: 26s;
-		  -moz-animation-play-state: running;
+		  /* -moz-animation-play-state: running; */
+	
+		  -ms-animation-name: falling_spinning_item1;
+		  -ms-animation-iteration-count: infinite;
+		  -ms-animation-timing-function: linear;
+		  -ms-animation-duration: 26s;
+		  /* -moz-animation-play-state: running; */
 		}
-
-		@-webkit-keyframes spin {
-		  from {-webkit-transform: rotate(0deg);}
-		  to {-webkit-transform: rotate(360deg);}
-		}
+@keyframes falling_spinning_item1 {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+	
+@-webkit-keyframes falling_spinning_item1 {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
 		
-		@-moz-keyframes spin {
-    from {-moz-transform: rotate(0deg);}
-		  to {-moz-transform: rotate(360deg);}
-		}
+@-moz-keyframes falling_spinning_item1 {
+    	from {-moz-transform: rotate(0deg);}
+	to {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes falling_spinning_item1 {
+    	from {-moz-transform: rotate(0deg);}
+	to {-moz-transform: rotate(360deg);}         
+}
