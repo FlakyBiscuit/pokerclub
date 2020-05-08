@@ -84,7 +84,7 @@ h1{
 }
         @keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px; /*transform: rotate(0deg),rotate(0deg)/*,rotate(0);*/}
-          100% {background-position: 50000px 50000px, -10000px 20000px/*, 10000px 20000px*/; transform: rotate(90deg),rotate(360)/*,rotate(275);*/}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;/* transform: rotate(90deg),rotate(360)/*,rotate(275);*/}
 	  /* from {transform: rotate(0deg), rotate(0deg), rotate(0deg);} */
 	  /* to {transform: rotate(0deg), rotate(360deg), rotate(0deg);} */
 	  /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
