@@ -85,8 +85,8 @@ h1{
         @keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px;, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}
-	  from {transform: rotate(0deg);}
-	  to {transform: rotate(360deg);}
+	  from {transform: rotate(0deg), rotate(0deg), rotate(0deg);}
+	  to {transform: rotate(0deg), rotate(360deg), rotate(0deg);}
          /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
 	/* chromium css-hack */
@@ -98,8 +98,8 @@ h1{
         @-moz-keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px,, 10000px 20000px;}
-	  from {moz-transform: rotate(0deg);}
-	  to {moz-transform: rotate(360deg);}
+	  from {moz-transform: rotate(0deg), rotate(0deg), rotate(0deg);}
+	  to {moz-transform: rotate(0deg), rotate(360deg), rotate(0deg);}
         }
 	/* microsoft css-hack */
         @-ms-keyframes falling_items_bg {
