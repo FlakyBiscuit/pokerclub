@@ -67,12 +67,16 @@ h1{
   width: 100%;
   z-index:1;
  -webkit-animation: falling_items_bg 1000s linear infinite;
- -moz-animation: falling_items_bg 1000s linear infinite;
- -ms-animation: falling_items_bg 1000s linear infinite;
- animation: falling_items_bg 1000s linear infinite;
  -webkit-transform: translate3d(0,0,0);
+ 
+ -moz-animation: falling_items_bg 1000s linear infinite;
  -moz-transform: translate3d(0,0,0);
+ 
+ -ms-animation: falling_items_bg 1000s linear infinite;
  -ms-transform: translate3d(0,0,0);
+ 
+ animation: falling_items_bg 1000s linear infinite;
+
  -o-transform: translate3d(0,0,0);
  transform: translate3d(0,0,0);
 }
@@ -92,4 +96,35 @@ h1{
         @-ms-keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
-        }  
+        }
+
+#falling_spinning_item1 {
+    background-image: url('../images/corndog-tile-2.png');
+		  animation-name: spin;
+		  animation-iteration-count: infinite;
+		  animation-timing-function: linear;
+		  animation-duration: 26s;
+		  animation-play-state: running;
+		  
+		  -webkit-animation-name: spin;
+		  -webkit-animation-iteration-count: infinite;
+		  -webkit-animation-timing-function: linear;
+		  -webkit-animation-duration: 26s;
+		  -webkit-animation-play-state: running;
+		  
+		  -moz-animation-name: spin;
+		  -moz-animation-iteration-count: infinite;
+		  -moz-animation-timing-function: linear;
+		  -moz-animation-duration: 26s;
+		  -moz-animation-play-state: running;
+		}
+
+		@-webkit-keyframes spin {
+		  from {-webkit-transform: rotate(0deg);}
+		  to {-webkit-transform: rotate(360deg);}
+		}
+		
+		@-moz-keyframes spin {
+    from {-moz-transform: rotate(0deg);}
+		  to {-moz-transform: rotate(360deg);}
+		}
