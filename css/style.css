@@ -118,7 +118,7 @@ h1{
     height: 100%;
     z-index: -1;
     background: url('../images/corndog-tile-1.png') repeat;
-    animation: spinner 1000s linear infinite;
+    animation: spinner 3s linear infinite;
     /*-webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
