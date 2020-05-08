@@ -128,7 +128,7 @@ h1{
 
 @keyframes spinner {
           /* 0% {background-position: 0px 0px/*, 0px 0px, 0px 0px; transform: rotate(0deg),rotate(0deg)/*,rotate(0);*/}
-          /* 100% {background-position: 50000px 50000px/*, -10000px 20000px, 10000px 20000px;/* transform: rotate(90deg),rotate(360)/*,rotate(275);*/}
+          /* 100% {background-position: 50000px 50000px/*, -10000px 20000px, 10000px 20000px;/* transform: rotate(90deg),rotate(360)/*,rotate(275);*/}*/
 	  from {transform: rotate(0deg)/*,rotate(0deg),rotate(0);*/}
           to {transform: rotate(275deg)/*,rotate(0deg),rotate(0);*/}
 }
