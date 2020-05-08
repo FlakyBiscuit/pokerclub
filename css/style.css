@@ -98,7 +98,7 @@ h1{
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
 
-#falling_spinning_item1 {
+.falling_spinning_item1 {
     background-image: url('../images/corndog-tile-2.png');
 		  animation-name: spin;
 		  animation-iteration-count: infinite;
