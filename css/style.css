@@ -66,64 +66,60 @@ h1{
   top: 0;
   width: 100%;
   z-index:1;
+  animation: falling_items_bg 1000s linear infinite;
+  transform: translate3d(0,0,0);
+  /* chromium css-hack */
  -webkit-animation: falling_items_bg 1000s linear infinite;
  -webkit-transform: translate3d(0,0,0);
- 
+ /* mozilla css-hack */
  -moz-animation: falling_items_bg 1000s linear infinite;
  -moz-transform: translate3d(0,0,0);
- 
+ /* microsoft css-hack */
  -ms-animation: falling_items_bg 1000s linear infinite;
  -ms-transform: translate3d(0,0,0);
- 
- animation: falling_items_bg 1000s linear infinite;
-
+ /* opera css-hack */
+ -o-animation: falling_items_bg 1000s linear infinite;
  -o-transform: translate3d(0,0,0);
- transform: translate3d(0,0,0);
+
 }
         @keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;} 
          /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
-        @-moz-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}         
-        }
+	/* chromium css-hack */
         @-webkit-keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}         
         }
+	/* mozilla css-hack */
+        @-moz-keyframes falling_items_bg {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}         
+        }
+	/* microsoft css-hack */
         @-ms-keyframes falling_items_bg {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
+        }
+	 /* opera css-hack */
+	 @-o-keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
 
 .falling_spinning_item1 {
-    background-image: url('../images/corndog-tile-2.png');
-		  animation-name: falling_spinning_item1;
-		  animation-iteration-count: infinite;
-		  animation-timing-function: linear;
-		  animation-duration: 26s;
-		  /* animation-play-state: running; */
-		  
-		  -webkit-animation-name: falling_spinning_item1;
-		  -webkit-animation-iteration-count: infinite;
-		  -webkit-animation-timing-function: linear;
-		  -webkit-animation-duration: 26s;
-		  /* -webkit-animation-play-state: running; */
-		  
-		  -moz-animation-name: falling_spinning_item1;
-		  -moz-animation-iteration-count: infinite;
-		  -moz-animation-timing-function: linear;
-		  -moz-animation-duration: 26s;
-		  /* -moz-animation-play-state: running; */
-	
-		  -ms-animation-name: falling_spinning_item1;
-		  -ms-animation-iteration-count: infinite;
-		  -ms-animation-timing-function: linear;
-		  -ms-animation-duration: 26s;
-		  /* -moz-animation-play-state: running; */
-		}
+    	background-image: url('../images/corndog-tile-2.png');
+	animation: falling_spinning_item1 26s linear infinite;
+	transform: translate3d(0,0,0);
+	-webkit-animation: falling_spinning_item1 26s linear infinite;
+	-webkit-transform: translate3d(0,0,0);
+  	-moz-animation-name: falling_spinning_item1 26s linear infinite;
+	-ms-transform: translate3d(0,0,0);
+	-o-animation-name: falling_spinning_item1 26s linear infinite;
+	-o-transform: translate3d(0,0,0);
+}
+
 @keyframes falling_spinning_item1 {
 	from {-webkit-transform: rotate(0deg);}
 	to {-webkit-transform: rotate(360deg);}
@@ -141,4 +137,8 @@ h1{
 @-ms-keyframes falling_spinning_item1 {
     	from {-moz-transform: rotate(0deg);}
 	to {-moz-transform: rotate(360deg);}         
+}
+@-ms-keyframes falling_spinning_item1 {
+    	from {-o-transform: rotate(0deg);}
+	to {-o-transform: rotate(360deg);}         
 }
