@@ -58,7 +58,7 @@ h1{
 
 .falling_items_bg{
   background: none;
-  background-image: url('../images/corndog-tile-1.png'), url('../images/corndog-tile-1.png'), url('../images/corndog-tile-1.png');
+  background-image: url('../images/corndog-tile-1.png'), url('../images/corndog-tile.png'), url('../images/corndog-tile-1.png');
   /* background-image: url(../images/spining_chip.gif), url(../images/spining_chip.gif), url(../images/spining_chip.gif);*/
   height: 100%;
   left: 0;
@@ -83,8 +83,8 @@ h1{
 
 }
         @keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;} 
+          0% {background-position: 0px 0px, rotate(0deg), 0px 0px;}
+          100% {background-position: 50000px 50000px, rotate(360deg), 10000px 20000px;} 
          /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
 	/* chromium css-hack */
@@ -94,8 +94,8 @@ h1{
         }
 	/* mozilla css-hack */
         @-moz-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}         
+          0% {background-position: 0px 0px, rotate(0deg), 0px 0px;}
+          100% {background-position: 50000px 50000px, rotate(360deg), 10000px 20000px;}         
         }
 	/* microsoft css-hack */
         @-ms-keyframes falling_items_bg {
@@ -108,7 +108,7 @@ h1{
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
 
-.falling_spinning_item1 {
+/*.falling_spinning_item1 {
     	background-image: url('../images/corndog-tile-2.png');
 	animation: falling_spinning_item1 26s linear infinite;
 	transform: translate3d(0,0,0);
