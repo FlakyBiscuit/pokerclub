@@ -83,8 +83,10 @@ h1{
 
 }
         @keyframes falling_items_bg {
-          0% {background-position: 0px 0px, rotate(0deg), 0px 0px;}
-          100% {background-position: 50000px 50000px, rotate(360deg), 10000px 20000px;} 
+          0% {background-position: 0px 0px, 0px 0px;, 0px 0px;}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}
+	  from {transform: rotate(0deg);}
+	  to {transform: rotate(360deg);}
          /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
 	/* chromium css-hack */
@@ -94,8 +96,10 @@ h1{
         }
 	/* mozilla css-hack */
         @-moz-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, rotate(0deg), 0px 0px;}
-          100% {background-position: 50000px 50000px, rotate(360deg), 10000px 20000px;}         
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, -10000px 20000px,, 10000px 20000px;}
+	  from {moz-transform: rotate(0deg);}
+	  to {moz-transform: rotate(360deg);}
         }
 	/* microsoft css-hack */
         @-ms-keyframes falling_items_bg {
