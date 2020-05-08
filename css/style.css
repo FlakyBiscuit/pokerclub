@@ -119,7 +119,7 @@ h1{
     z-index: -1;
     background: url('../images/corndog-tile-1.png') repeat;
     animation: spinner 3s linear infinite alternate-reverse;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     /*-webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
@@ -130,6 +130,6 @@ h1{
 @keyframes spinner {
           /* 0% {background-position: 0px 0px/*, 0px 0px, 0px 0px; transform: rotate(0deg),rotate(0deg)/*,rotate(0);*/}
           /* 100% {background-position: 50000px 50000px/*, -10000px 20000px, 10000px 20000px;/* transform: rotate(90deg),rotate(360)/*,rotate(275);*/}*/
-	  /*0% {transform: rotate(0deg)/*,rotate(0deg),rotate(0);*/}*/
+	  0% {transform: rotate(180deg)/*,rotate(0deg),rotate(0);*/}
           100% {transform: rotate(360deg)/*,rotate(0deg),rotate(0);*/}
 }
