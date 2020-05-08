@@ -58,7 +58,7 @@ h1{
 
 .falling_items_bg{
   background: none;
-  background-image: url('../images/corndog-tile-1.png'), url('../images/corndog-tile.png'), url('../images/corndog-tile-2.png');
+  background-image: url('../images/corndog-tile-1.png')/*, url('../images/corndog-tile.png'), url('../images/corndog-tile-2.png');
   /* background-image: url(../images/spining_chip.gif), url(../images/spining_chip.gif), url(../images/spining_chip.gif);*/
   height: 100%;
   left: 0;
@@ -90,22 +90,22 @@ h1{
 	  /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
 	/* chromium css-hack */
-        @-webkit-keyframes falling_items_bg {
+        /*@-webkit-keyframes falling_items_bg {
           0% {-webit-transform: rotate(0),rotate(0),rotate(0);}
           100% { -webit-transform: rotate(90),rotate(360),rotate(275);}
         }
 	/* mozilla css-hack */
-        @-moz-keyframes falling_items_bg {
+        /*@-moz-keyframes falling_items_bg {
           0% {-moz-transform: rotate(0),rotate(0),rotate(0);}
           100% {-moz-transform: rotate(90),rotate(360),rotate(275);}
         }
 	/* microsoft css-hack */
-        @-ms-keyframes falling_items_bg {
+        /*@-ms-keyframes falling_items_bg {
           0% {-ms-transform: rotate(0),rotate(0),rotate(0);}
           100% {-ms-transform: rotate(90),rotate(360),rotate(275);}          
         }
 	 /* opera css-hack */
-	 @-o-keyframes falling_items_bg {
+	 /*@-o-keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
