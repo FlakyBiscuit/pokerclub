@@ -83,26 +83,26 @@ h1{
 
 }
         @keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px; transform: rotate(0),rotate(360),rotate(0);}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; transform: rotate(-90),rotate(360),rotate(-275);}
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; transform: rotate(0),rotate(0),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; transform: rotate(90),rotate(360),rotate(275);}
 	  /* from {transform: rotate(0deg), rotate(0deg), rotate(0deg);} */
 	  /* to {transform: rotate(0deg), rotate(360deg), rotate(0deg);} */
 	  /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
 	/* chromium css-hack */
         @-webkit-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -webit-transform: rotate(0),rotate(360),rotate(0);}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; -webit-transform: rotate(0),rotate(360),rotate(0);}
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -webit-transform: rotate(0),rotate(0),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; -webit-transform: rotate(90),rotate(360),rotate(275);}
         }
 	/* mozilla css-hack */
         @-moz-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -moz-transform: rotate(0),rotate(360),rotate(0);}
-          100% {background-position: 50000px 50000px, -10000px 20000px,, 10000px 20000px; -moz-transform: rotate(0),rotate(360),rotate(0);}
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -moz-transform: rotate(0),rotate(0),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px,, 10000px 20000px; -moz-transform: rotate(90),rotate(360),rotate(275);}
         }
 	/* microsoft css-hack */
         @-ms-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -ms-transform: rotate(0),rotate(360),rotate(0);}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; -ms-transform: rotate(0),rotate(360),rotate(0);}          
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -ms-transform: rotate(0),rotate(0),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; -ms-transform: rotate(90),rotate(360),rotate(275);}          
         }
 	 /* opera css-hack */
 	 @-o-keyframes falling_items_bg {
