@@ -91,18 +91,18 @@ h1{
         }
 	/* chromium css-hack */
         @-webkit-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -webit-transform: rotate(0),rotate(360),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; -webit-transform: rotate(0),rotate(360),rotate(0);}
         }
 	/* mozilla css-hack */
         @-moz-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, -10000px 20000px,, 10000px 20000px;}
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -moz-transform: rotate(0),rotate(360),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px,, 10000px 20000px; -moz-transform: rotate(0),rotate(360),rotate(0);}
         }
 	/* microsoft css-hack */
         @-ms-keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; -ms-transform: rotate(0),rotate(360),rotate(0);}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px; -ms-transform: rotate(0),rotate(360),rotate(0);}          
         }
 	 /* opera css-hack */
 	 @-o-keyframes falling_items_bg {
