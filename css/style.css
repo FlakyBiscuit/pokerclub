@@ -110,7 +110,7 @@ h1{
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
 
-.spinnermyelement:before
+.spinner:before
 {
     content: "";
     position: absolute;
