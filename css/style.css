@@ -110,7 +110,12 @@ h1{
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
 
-.spinner:before
+.spinner {
+  position: relative;
+  overflow: hidden;
+}
+
+.spinner::before
 {
     content: "";
     position: absolute;
@@ -119,7 +124,6 @@ h1{
     z-index: -1;
     background: url('../images/corndog-tile-1.png') repeat;
     animation: spinner 3s linear infinite alternate-reverse;
-    transform: rotate(180deg);
     /*-webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
