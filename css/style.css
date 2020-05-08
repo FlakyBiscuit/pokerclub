@@ -66,81 +66,46 @@ h1{
   top: 0;
   width: 100%;
   z-index:1;
-  animation: falling_items_bg 5s linear infinite;
-  /*transform: translate3d(0,0,0);*/
+  animation: falling_items_bg 1000s linear infinite;
+  transform: translate3d(0,0,0);
   /* chromium css-hack */
  -webkit-animation: falling_items_bg 1000s linear infinite;
- /*-webkit-transform: translate3d(0,0,0);*/
+ -webkit-transform: translate3d(0,0,0);
  /* mozilla css-hack */
  -moz-animation: falling_items_bg 1000s linear infinite;
- /*-moz-transform: translate3d(0,0,0);*/
+ -moz-transform: translate3d(0,0,0);
  /* microsoft css-hack */
  -ms-animation: falling_items_bg 1000s linear infinite;
- /*-ms-transform: translate3d(0,0,0);*/
+ -ms-transform: translate3d(0,0,0);
  /* opera css-hack */
  -o-animation: falling_items_bg 1000s linear infinite;
- /*-o-transform: translate3d(0,0,0);*/
+ -o-transform: translate3d(0,0,0);
 
 }
         @keyframes falling_items_bg {
-          0% {background-position: 0px 0px, 0px 0px/*, 0px 0px*/; transform: rotate(0deg),rotate(0deg)/*,rotate(0)*/;}
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px; /*transform: rotate(0deg),rotate(0deg)/*,rotate(0)*/;}
           100% {background-position: 50000px 50000px, -10000px 20000px/*, 10000px 20000px*/; transform: rotate(90deg),rotate(360)/*,rotate(275);*/}
 	  /* from {transform: rotate(0deg), rotate(0deg), rotate(0deg);} */
 	  /* to {transform: rotate(0deg), rotate(360deg), rotate(0deg);} */
 	  /* 100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;} */
         }
 	/* chromium css-hack */
-        /*@-webkit-keyframes falling_items_bg {
-          0% {-webit-transform: rotate(0),rotate(0),rotate(0);}
-          100% { -webit-transform: rotate(90),rotate(360),rotate(275);}
+        @-webkit-keyframes falling_items_bg {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;;}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}
         }
 	/* mozilla css-hack */
-        /*@-moz-keyframes falling_items_bg {
-          0% {-moz-transform: rotate(0),rotate(0),rotate(0);}
-          100% {-moz-transform: rotate(90),rotate(360),rotate(275);}
+        @-moz-keyframes falling_items_bg {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}
         }
 	/* microsoft css-hack */
-        /*@-ms-keyframes falling_items_bg {
-          0% {-ms-transform: rotate(0),rotate(0),rotate(0);}
-          100% {-ms-transform: rotate(90),rotate(360),rotate(275);}          
-        }
-	 /* opera css-hack */
-	 /*@-o-keyframes falling_items_bg {
+        @-ms-keyframes falling_items_bg {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
         }
-
-/*.falling_spinning_item1 {
-    	background-image: url('../images/corndog-tile-2.png');
-	animation: falling_spinning_item1 26s linear infinite;
-	transform: translate3d(0,0,0);
-	-webkit-animation: falling_spinning_item1 26s linear infinite;
-	-webkit-transform: translate3d(0,0,0);
-  	-moz-animation-name: falling_spinning_item1 26s linear infinite;
-	-ms-transform: translate3d(0,0,0);
-	-o-animation-name: falling_spinning_item1 26s linear infinite;
-	-o-transform: translate3d(0,0,0);
-}
-
-@keyframes falling_spinning_item1 {
-	from {-webkit-transform: rotate(0deg);}
-	to {-webkit-transform: rotate(360deg);}
-}
-	
-@-webkit-keyframes falling_spinning_item1 {
-	from {-webkit-transform: rotate(0deg);}
-	to {-webkit-transform: rotate(360deg);}
-}
-		
-@-moz-keyframes falling_spinning_item1 {
-    	from {-moz-transform: rotate(0deg);}
-	to {-moz-transform: rotate(360deg);}
-}
-@-ms-keyframes falling_spinning_item1 {
-    	from {-moz-transform: rotate(0deg);}
-	to {-moz-transform: rotate(360deg);}         
-}
-@-ms-keyframes falling_spinning_item1 {
-    	from {-o-transform: rotate(0deg);}
-	to {-o-transform: rotate(360deg);}         
-}*/
+	/* opera css-hack */
+	@-o-keyframes falling_items_bg {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, -10000px 20000px, 10000px 20000px;}          
+        }
