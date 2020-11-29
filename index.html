@@ -86,26 +86,39 @@
 	<div class="form-row">
 		<div class="col-md-4 mb-3">
 			<label for="validationServer01">First name</label>
-			<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+			<input name="First Name" type="text" class="form-control" id="validationServer01" placeholder="First name" value="Joe" required>
 			<div class="valid-feedback">
 				Looks good!
+			</div>
+			<div class="invalid-feedback">
+				Your first name is required!
 			</div>
 		</div>
 		
 		<div class="col-md-4 mb-3">
       			<label for="validationServer02">Last name</label>
-      			<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required>
+      			<input name="Last First Name" type="text" class="form-control" id="validationServer02" placeholder="Last name" value="Bloggs" required>
       			<div class="valid-feedback">
         			Looks good!
 			</div>
+			<div class="invalid-feedback">
+				Your last name is required!
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="form-group">
-<label for="contactEmail">*Email address:</label>
-<input name="Reply To" type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="joebloggs@example.com" required>
-<small id="emailHelp" class="form-text text-muted">*Required</small>
+	<div class="form-row">
+		<div class="col-md-4 mb-3">
+			<label for="contactEmail">Email address:</label>
+			<input name="Reply To" type="email" class="form-control is-valid" id="contactEmail" aria-describedby="emailHelp" placeholder="enter a email address" required>
+			<small id="emailHelp" class="form-text text-muted">*Required</small>
+			<div class="valid-feedback">
+        			Looks good!
+			</div>
+			<div class="invalid-feedback">
+				Your Email Address is required!
+			</div>
+	</div>
 </div>
 	
 <div class="form-group">
