@@ -80,7 +80,7 @@
 <!-- modify this form HTML and place wherever you want your form -->
 <div class="container">
 	
-<form action="https://formspree.io/f/xwkwnnlk" method="POST">
+<form class="needs-validation" action="https://formspree.io/f/xwkwnnlk" method="POST" novalidate>
 	
 <div class="form-group">
 	<div class="form-row">
@@ -133,14 +133,42 @@
 <div class="invalid-feedback">Please enter your message/query in the textarea.</div>
 </div>
 	
-<div class="form-group form-check">
-<input name="Vouchers" type="checkbox" class="form-check-input" id="vouchersCheckBox">
-<label class="form-check-label" for="vouchersCheckBox">Interested in Vouchers</label>
+<div class="form-group">
+	<div class="form-check">
+		<input name="Vouchers" type="checkbox" class="form-check-input" id="vouchersCheckBox" value="" required>
+		<label class="form-check-label" for="vouchersCheckBox">
+			Interested in Vouchers
+		</label>
+      		<div class="invalid-feedback">
+        		You must check the checkbox TEST!
+      		</div>
+    	</div>
 </div>
 	
 <!-- submit or send button -->	
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+	
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 	
 	 
   <div class="container">
